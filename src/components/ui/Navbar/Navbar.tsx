@@ -94,9 +94,9 @@ export default function Navbar() {
             </Drawer>
             <Stack
               width={"100%"}
+              direction={"row"}
+              justifyContent="space-between"
               alignItems={"center"}
-              justifyContent={"space-between"}
-              flexDirection={"row"}
             >
               <Typography
                 component={RouterLink}
@@ -104,11 +104,25 @@ export default function Navbar() {
                 sx={{ color: "white", textDecoration: "none" }}
                 variant="h4"
               >
-                badflix
+                badflixx
               </Typography>
               <Search />
-              <IconButton color="inherit" onClick={toggleColorMode}>
-                <Brightness7 />
+              <IconButton
+                sx={{
+                  marginLeft: 2,
+                  position: "relative",
+                  width: 40,
+                  "--IconButton-hoverBg": "transparent",
+                  "&:hover": {
+                    backgroundColor: "transparent",
+                  },
+                }}
+                color="inherit"
+                onClick={toggleColorMode}
+              >
+                <Brightness7
+                  sx={{ position: "absolute", right: "50%", top: "-25%" }}
+                />
               </IconButton>
             </Stack>
           </Toolbar>

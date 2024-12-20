@@ -52,6 +52,7 @@ export default function Search() {
   return (
     <Autocomplete
       sx={{
+        marginLeft: 2,
         width: 300,
         backgroundColor: "rgba(255, 255, 255, 0.15)",
         "& .MuiOutlinedInput-root": {

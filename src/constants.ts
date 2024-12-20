@@ -12,6 +12,7 @@ import {
   StarPurple500,
   VolunteerActivism,
 } from "@mui/icons-material";
+import CastleIcon from "@mui/icons-material/Castle";
 
 export type TopList = {
   title: string;
@@ -40,6 +41,7 @@ export const iconComponents = {
   VolunteerActivism,
   Fort,
   Reorder,
+  CastleIcon,
 };
 
 export const TOP_LISTS: TopList[] = [
@@ -56,6 +58,12 @@ export const TOP_LISTS: TopList[] = [
     value: "TOP_250_MOVIES",
   },
   {
+    title: "Топ 250 лучших сериалов",
+    icon: "CastleIcon",
+    url: "/PopularSerials",
+    value: "TOP_250_TV_SHOWS",
+  },
+  {
     title: "Вампиры",
     icon: "Bloodtype",
     url: "/vampire",
@@ -66,30 +74,6 @@ export const TOP_LISTS: TopList[] = [
     icon: "MenuBook",
     url: "/comics",
     value: "COMICS_THEME",
-  },
-  {
-    title: "Семейные",
-    icon: "FamilyRestroom",
-    url: "/family",
-    value: "FAMILY",
-  },
-  {
-    title: "Романтика",
-    icon: "VolunteerActivism",
-    url: "/romantic",
-    value: "LOVE_THEME",
-  },
-  {
-    title: "Зомби",
-    icon: "MoodBad",
-    url: "/zombie",
-    value: "ZOMBIE_THEME",
-  },
-  {
-    title: "Катастрофы",
-    icon: "Pool",
-    url: "/catastrophe",
-    value: "CATASTROPHE_THEME",
   },
 ];
 

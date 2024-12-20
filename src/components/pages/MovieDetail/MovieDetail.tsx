@@ -146,14 +146,15 @@ export default function MovieDetail() {
             )
             .slice(0, 5)
             .map(({ nameRu, staffId }: { nameRu: string; staffId: number }) => (
-              <Link
-                component={RouterLink}
-                to={`/actor/${staffId}`}
-                gutterBottom
-                key={staffId}
-              >
-                {nameRu}
-              </Link>
+              <div key={staffId}>
+                <Link
+                  component={RouterLink}
+                  to={`/actor/${staffId}`}
+                  gutterBottom
+                >
+                  {nameRu}
+                </Link>
+              </div>
             ))}
         </Grid>
       </Grid>
